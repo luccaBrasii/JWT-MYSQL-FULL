@@ -1,4 +1,5 @@
-export function hellou() {
+function hellou() {
     alert('ola mundo')
 }
 
+export default hellou

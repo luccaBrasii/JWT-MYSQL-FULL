@@ -146,8 +146,11 @@ module.exports = app => {
             attributes: { exclude: ['senha', 'confirmar_senha'] }
         })
 
-        const filePath = path.join(__dirname, '../../public/privateRoute.html');
-        res.status(200).sendFile(filePath);
+
+        //const filePath = path.join(__dirname, '../../public/privateRoute.html');  .sendFile(filePath);
+        return res.status(200).json({
+            user
+        })
 
     })
 }
